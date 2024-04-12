@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans Serif";
+    box-sizing: border-box;
+}
+
+.nav-barr{
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.61)0%, rgba(68, 68, 68, 0.787)100%), url(https://i.blogs.es/91bc1f/lenguajes-de-programacion/1366_521.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+.nav-barr header{
+    width: 100%;
+    height: 90px;
+    background: rgba(39, 39, 39, 0.733);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo {
+    font-size: 50px;
+    color: rgb(255, 175, 175);
+    font-family: "Silkscreen", sans-serif;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.nav-bar ul li a.select{
+    background: white;
+    color: black;
+}
+
+.nav-bar ul li a:hover {
+    color: black;
+    background: white;
+}
+
+.nav-barr .text{
+    padding: 35px 10px 150px 35px;
+}
+
+.nav-barr .text h2{
+    color: rgb(255, 175, 175);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+}
+
+.nav-barr .text p{
+    color: white;
+    width: 60%;
+    padding-top: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.nav-barr .text button{
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 50px;
+    background: rgb(255, 175, 175);
+    border: none;
+    color: rgb(95, 95, 95);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-barr .text button:hover{
+    background: white;
+    color: black;
+}
+
+.card-info{
+    display: flex;
+    justify-content: center;
+}
+
+.card-info .info{
+    width: 70%;
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    margin-top: -7%;
+}
+
+.card-info .info .data{
+    text-align: center;
+    padding: 20px;
+    background: rgb(66, 66, 66);
+    border-radius: 20px;
+    border: 3px solid rgb(255, 175, 175);
+    color: white;
+}
+
+.card-info .info .data img{
+    width: 60%;
+    border-radius: 150px;
+    margin-top: -22%;
+    border: 3px solid rgb(255, 175, 175);
+}
+
+.card-info .info .data h2,p{
+    padding-top: 10px;
+}
+
+.card-info .info .data h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card-info .info .data p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.service{
+    margin-top: 25%;
+    text-align: center;
+}
+
+.service h2{
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+}
+
+.service p{
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+.service .content-cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 3%;
+}
+
+.service .content-cards .content-plat{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service .content-cards .content-plat .info{
+    display: flex;
+    padding: 30px;
+}
+
+.service .content-cards .content-plat .info i{
+    font-size: 25px;
+    color: rgb(255, 152, 152);
+}
+
+.service .content-cards .content-plat .info .lyrics h2{
+    font-size: 20px;
+}
+
+.service .content-cards .content-plat .info .lyrics p{
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 11%;
+    color: rgb(77, 77, 77);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+}
+
+.form-contact{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background: rgb(18, 15, 31);
+    margin-top: 5%;
+}
+
+.form-contact .center-form{
+    width: 70%;
+    display: flex;
+    gap: 40px;
+}
+
+.form-contact .center-form .complete-data  form label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 26px;
+    color: rgb(196, 196, 196);
+}
+
+.form-contact .center-form .complete-data  form .word-content{
+    border-bottom: 2px solid rgb(255, 152, 152);
+}
+
+.form-contact .center-form .complete-data  form input{
+    padding: 5px 10px;
+    width: 20rem;
+    font-size: 20px;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(196, 196, 196);
+    margin: 5px;
+    outline: none;
+    background: none;
+}
+
+.form-contact .center-form .complete-data  form button{
+    padding: 5px 10px;
+    background: rgb(66, 66, 66);
+    color: rgb(255, 152, 152);
+    border-radius: 150px;
+    border: none;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+.form-contact .center-form .complete-data  form button:hover{
+    background: white;
+    color: rgb(66, 66, 66);
+    border: 2px solid rgb(255, 152, 152);
+}
+
+.form-contact .center-form .info-contact{
+    color: rgb(196, 196, 196);
+}
+
+.form-contact .center-form .info-contact h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+}
+
+.form-contact .center-form .info-contact p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+    background: #ffe56e;
+}
+
+.copyright h2{
+    font-size: 50px;
+    color: rgb(255, 175, 175);
+    font-family: "Silkscreen", sans-serif;
+    text-shadow: 0.1em 0.1em #773563;
+}
+
+.copyright p{
+    width: 60%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: rgb(70, 70, 70);
+}
+
+@media only screen and (max-width:780px){
+    
+
+    .nav-barr header .logo{
+        font-size: 20px;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: rgb(255, 134, 134);
+        margin: 6px 0;
+    }
+
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: rgba(39, 39, 39, 0.863);
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active{
+        height: 400px;
+    }
+
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+
+    .card-info{
+        width: 100%;
+    }
+
+    .card-info .info{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .card-info .info .data{
+        width: 100%;
+    }
+    
+    .service{
+        margin-top: 65rem;
+    }
+
+    .service .content-cards .content-plat{
+        width: 100%;
+    }
+
+    .service .content-cards .content-plat .info i{
+        font-size: 20px;
+    }
+
+    .service .content-cards .content-plat .info .lyrics h2{
+        font-size: 15px;
+    }
+
+    .service .content-cards .content-plat .info .lyrics p{
+        font-size: 14px;
+    }
+
+    .form-contact .center-form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .copyright{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (width: 800px) and (height: 480px){
+    .card-info .info{
+        width: 90%;
+    }
+
+    .service{
+        margin-top: 24rem;
+    }
+
+    .service .content-cards{
+        width: 100%;
+    }
+
+    .service .content-cards .content-plat{
+        width: 100%;
+        display: flex;
+        gap: 2px;
+    }
+
+    .form-contact .center-form{
+        justify-content: center;
+    }
+}
+
+@media (width: 1280px) and (height: 800px){
+    .card-info .info{
+        width: 90%;
+    }
+
+    .service{
+        margin-top: 20rem;
+    }
+
+    .service .content-cards{
+        width: 100%;
+    }
+
+    .service .content-cards .content-plat{
+        width: 100%;
+        display: flex;
+        gap: 2px;
+    }
+
+    .form-contact .center-form{
+        justify-content: center;
+    }
+}
+
+@media (width: 1024px) and (height: 768px){
+    .card-info .info{
+        width: 90%;
+    }
+
+    .service{
+        margin-top: 20rem;
+    }
+
+    .service .content-cards{
+        width: 100%;
+    }
+
+    .service .content-cards .content-plat{
+        width: 100%;
+        display: flex;
+        gap: 2px;
+    }
+
+    .form-contact .center-form{
+        justify-content: center;
+    }
+}
